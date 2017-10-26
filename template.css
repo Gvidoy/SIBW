@@ -1,0 +1,970 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/*====================================*/
+/*  BODY Y FONTS                      */
+/*====================================*/
+* {
+    padding: 0em;
+    margin: 0em;
+}
+body {
+    background: #E0E0E0;
+}
+body {
+    font-size: 10pt;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+}
+p {
+    line-height: 1.5em;
+    margin-bottom: 1.0em;
+}
+
+a:hover {
+    text-decoration: none;
+}
+h3,
+h4 {
+    display: inline;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+h3 {
+    font-size: 1.7em;
+    padding-right: 34px;
+}
+h4 {
+    font-size: 1.2em;
+    padding-right: 28px;
+}
+
+.centrado {
+    text-align: center;
+}
+/* No usado
+.grey {
+    background-color: #E0E0E0 !important;
+}*/
+.verde {
+    background-color: #879C50 !important;
+}
+.verde-claro {
+    background-color: #c0ca9b !important;
+}
+.letra-blanca {
+    color: #FFF;
+}
+/*====================================*/
+/*          HEADER                    */
+/*====================================*/
+#header {
+    position: relative;
+    width: 100%;
+    height: 7.5em;
+    background: #2B2B2B;
+}
+#headercontent {
+    position: absolute;
+    padding: 1.5em 2.0em 1.3em 2.0em;
+}
+#headercontent h1 {
+    font-weight: normal;
+    color: #fff;
+    font-size: 2.5em;
+}
+#headercontent h1 sup {
+    color: #777;
+}
+#headercontent h2 {
+    font-size: 1.0em;
+    font-weight: normal;
+    color: #aaa;
+}
+/*====================================*/
+/*          HEADER - NAVBAR           */
+/*====================================*/
+
+#salir{
+    background-color: #B71C1C;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 100px;
+}
+
+#salir:hover{
+    background-color: #EF5350;
+}
+
+#reservar{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#reservar:hover{
+    background-color: #FFF !important;
+}
+
+nav {
+    position: relative;
+}
+nav ul {
+    background: #2B2B2B;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+nav ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: -4px;
+    text-align: center;
+}
+nav ul li:nth-last-child(2) {
+    margin-right: 0px;
+    padding: 0px;
+}
+nav ul li:last-child {
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    display: block;
+    background: #2B2B2B;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.1s linear;
+    line-height: 20px;
+}
+.active {
+    background: #4d4d4d !important;
+}
+/*nav ul li a:hover*/
+
+.navhover:hover {
+    background: #4d4d4d;
+}
+.floatright {
+    /*float:right; Parche para iconos de redes sociales*/
+    margin-left: 43%;
+}
+.fbhover,
+.twhover {
+    transition: ease-out 0.3s;
+    font-size: 25px !important;
+}
+.fbhover:hover {
+    color: #3B5998;
+}
+.twhover:hover {
+    color: #1dcaff;
+}
+.estrella {
+    font-size: 12px !important;
+}
+#headercontent h1 sup {
+    padding: 8px;
+}
+/*====================================*/
+/*      HEADER - NAVBAR - DROP        */
+/*====================================*/
+
+li.dropdown {
+    display: inline-block;
+}
+
+#reservar{
+    background-color: #E0E0E0 !important;
+    color: black !important;
+    font-weight: bolder;
+}
+
+/*alinear el icono con el texto*/
+/*.dropicon{
+    vertical-align: middle;
+    display:block;
+    padding-bottom:7px;
+    padding-left:5px;
+}*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 170px; /*160px antes y sin overflow auto*/
+    overflow:auto
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #4d4d4d}
+
+li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .navhover {
+    background-color: #4d4d4d;
+}
+/*====================================*/
+/*          CONTENIDO GENERAL         */
+/*====================================*/
+#cuerpo {
+    padding: 0em 0em 0em 0em;
+    position: relative;
+    background-color: #E0E0E0;
+}
+#normalcontent {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: table;
+    margin: 0 auto;
+    padding: 2% 0;
+    /*height: 100%;*/
+    background-color: #E0E0E0;
+}
+.contentarea {
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-box-shadow: 3px 4px 5px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 4px 5px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 4px 5px -5px rgba(0, 0, 0, 0.75);
+}
+.divider {
+    position: relative;
+    padding: 1.0em 0em 0.5em 0em;
+    clear: both;
+    background-color: #E0E0E0;
+}
+.black-divider {
+    position: relative;
+    padding: 1.0em 0em 0.5em 0em;
+    clear: both;
+    background-color: #2b2b2b;
+}
+#presentacion {
+    width: 20%;
+    padding: 2% 5% 2% calc(75% - 250px);
+    background-image: url(./images/presentacion.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 11px;
+}
+/*====================================*/
+/*          FOOTER                    */
+/*====================================*/
+#footer {
+    position: relative;
+    height: 2em;
+    clear: both;
+    padding-top: 5.0em;
+    background: #2B2B2B;
+    font-size: 0.8em;
+    color: #fff;
+}
+#footer .left {
+    position: absolute;
+    left: 2.0em;
+    bottom: 1.2em;
+}
+#footer .right {
+    position: absolute;
+    right: 2.0em;
+    bottom: 1.2em;
+}
+#copyright {
+    color: #a6a6a6;
+}
+
+/*====================================*/
+/*          CAJAS                    */
+/*====================================*/
+.slogan {
+    font-size: 16px;
+}
+.box p {
+    margin-bottom: 50px;
+}
+.box {
+    width: calc(30% - 83px);
+    background: #FFF;
+    float: left;
+    margin: 0% 0.66666%;
+    height: 300px;
+    padding: 1%;
+    position: absolute;
+}
+.h100{
+    height: 100% !important;
+}
+.derecha {
+    float: right;
+    width: 60%;
+}
+.sombra {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.sombra:before,
+.sombra:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 50%;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+.sombra:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+.caja-individual{
+    padding-left: 40%;
+    width: 1000px;
+}
+
+/*====================================*/
+/*          CAJAS - BOTÓN             */
+/*====================================*/
+
+.box button{
+    white-space: nowrap;
+    border-radius: 4px;
+    border: none;
+    background: none;
+    font-family: 'Roboto', sans-serif;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+    color: #777;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px 0px 0px 0px #B8B8B8;
+    background: #f0f0f0;
+    width: 150px;
+    height: 35px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/*====================================*/
+/*          CAJAS - IMAGEN ALHAMBRA   */
+/*====================================*/
+.alhambra-mosaic {
+    background-image: url('./images/alhambra-mosaic.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/*====================================*/
+/*          LISTA SERVICIOS           */
+/*====================================*/
+
+.servicios {
+    height: 550px !important;
+}
+.servicon {
+    padding: 0px 15px 0px 0px;
+    float: right;
+}
+.rolldown-list {
+    text-align: left;
+    padding: 70px 0;
+    margin: 0;
+}
+.rolldown-list li {
+    padding: 1em;
+    margin-bottom: .125em;
+    display: block;
+    list-style: none;
+    text-transform: uppercase;
+}
+.rolldown-list li:nth-child(2n) {
+    background-color: #4d4d4d;
+}
+.rolldown-list li:nth-child(2n+1) {
+    background-color: #333333;
+}
+#myList {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    margin-left: -35%;
+}
+
+/*====================================*/
+/*          CONTACTO                  */
+/*====================================*/
+.border-box {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  resize:vertical;
+  width: 100%;
+}
+
+.container {
+  /*max-width: 510px;
+  min-width: 324px;*/
+  margin: 50px 100px 50px;
+  background-color: #fff;
+  border: 1px solid #cfcfcf;
+  border-bottom: 3px solid #ccc;
+}
+
+.row {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em;
+}
+.row.contact-header {
+  padding: 1.5em 2.5em;
+  border-bottom: 1px solid #ccc;
+  background: left -80px;
+  background-color: #4d4d4d;
+  color: #fff;
+}
+.row.contact-body {
+  padding: .5em 2.5em 1em;
+}
+
+.row.contact-body:before{
+    /*content:"O enviános un e-mail";*/
+    font-weight: bold;
+}
+
+.pull-right {
+  float: right;
+}
+
+.informacion{ 
+    width: 30%;
+    background: #FFF;
+    float: left;
+    margin-left: 0.5%;
+    margin-top: 8%;
+   /* height: 100%;*/
+    /*padding: 1%;*/
+    position: absolute;
+    
+}
+.mapa {
+    width: 100% !important;
+    /*margin:10%;*/
+    float: right;
+}
+
+
+#contact-content{
+    margin-right: -15px;
+    margin-left: -15px;
+    margin: 0 auto;
+    padding: 2% 0;
+    height: 100%;
+    background-color: #E0E0E0;
+}
+
+
+.btn {
+  font-size: 1.0625em;
+  display: inline-block;
+  padding: 0.74em 1.5em;
+  margin: 1.5em 0 0;
+  color: #fff;
+  border-width: 0 0 0 0;
+  border-bottom: 5px solid;
+  text-transform: uppercase;
+  background-color: #b3b3b3;
+  border-bottom-color: #8c8c8c;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.btn:hover {
+  background-color: #bfbfbf;
+}
+.btn.btn-submit {
+  background-color: #4f6fad;
+  border-bottom-color: #374d78;
+}
+.btn.btn-submit:hover {
+  background-color: #5f7db6;
+}
+
+form {
+  max-width: 100%;
+  display: block;
+}
+form ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+form ul li {
+  margin: 0 0 0.25em 0;
+  clear: both;
+  display: inline-block;
+  width: 100%;
+}
+form ul li:last-child {
+  margin: 0;
+}
+form ul li p {
+  width: 40%;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+form ul li p.right {
+  float: right;
+}
+form ul li .divider {
+  margin: 0.5em 0 0.5em 0;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: #4f6fad;
+  background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
+}
+.rojo {
+
+  color: #ee9cb4;
+}
+.azul {
+  color: #4f6fad;
+}
+.enciende {
+  background-color: #ee9cb4;
+}
+.apaga {
+  background-color: #fff;
+}
+a.contact-social{
+    color:#fff;
+}
+a.contact-social i{
+    padding: 15px 10px 0px 10px;
+}
+form label{
+  display: block;
+  margin: 0 0 0.5em 0;
+  color: #4f6fad;
+  font-size: 1em;
+}
+
+form input{
+  margin: 0 0 0.5em 0;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  color: #555;
+  font-size: 1em;
+}
+form textarea,
+form select{
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  width: 100%;
+  color: #555;
+}
+
+form select{
+    background-color: #FFF;
+}
+
+/*====================================*/
+/*        RESERVAR                    */
+/*====================================*/
+
+.caja-reservar{
+    width: 100%;
+    height: 600px;
+    background: #FFF;
+    float: left;
+    margin: 0%;;
+    padding: 5% 30% 0 10%;
+    position: relative;
+}
+
+
+.aviso-registro{
+    margin: 15px 0 25px 0;
+    position: relative;
+}
+
+.pago-cabecera{
+    margin: 25px 0 15px 0;
+    position: relative;
+}
+
+/*====================================*/
+/*        CAJA LOGIN - REGISTRO       */
+/*====================================*/
+
+.caja-login{
+    width: 100%;
+    height: 400px;
+    background: #FFF;
+    float: left;
+    margin: 0%;;
+    padding: 5% 30% 0 10%;
+    position: relative;
+}
+
+.caja-registro{
+    width: 100%;
+    height: 800px;
+    background: #FFF;
+    float: left;
+    margin: 0%;;
+    padding: 5% 30% 0 10%;
+    position: relative;
+}
+
+
+
+/*====================================*/
+/*        MIS RESERVAS                */
+/*====================================*/
+
+.caja-reservas{
+    width: 100%;
+    height: 1000px;
+    background: #FFF;
+    float: left;
+    margin: 0%;;
+    padding: 5% 30% 0 10%;
+    position: relative;
+}
+
+/*====================================*/
+/*         TABLA - RESERVAS           */
+/*====================================*/
+
+.tabla-reservas{
+    height: 2000px;
+}
+
+table {
+  max-width: 960px;
+  margin: 10px auto;
+}
+
+caption {
+  font-size: 1.6em;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+thead th {
+  font-weight: 400;
+  background: #8a97a0;
+  color: #FFF;
+}
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+tr:nth-child(even) {
+  background: #e8eeef;
+}
+
+th, td {
+  text-align: left;
+  padding: 20px;
+  font-weight: 300;
+}
+
+tfoot tr {
+  background: none;
+}
+
+tfoot td {
+  padding: 10px 2px;
+  font-size: 0.8em;
+  font-style: italic;
+  color: #8a97a0;
+}
+/*====================================*/
+/*         BACKEND                    */
+/*====================================*/
+
+.tabla-modificar{
+    height: 1500px;
+}
+
+.tabla-modificar-actividades{
+    height: 3000px;
+}
+
+.campo-modificar{
+    height: 100px !important;
+}
+
+.label-ajax{
+    float: left;
+}
+
+/*====================================*/
+/*          SLIDER                    */
+/*====================================*/
+
+.slider-container:before{
+    content: "¡Haz click en alguna de nuestras promociones y disfruta!";
+    font-size: 12px;
+    color: white;
+    padding-left: 5px;
+    display: block;
+}
+.slider-container{
+    margin:30px 5px 20px 5px;
+	width:240px;
+	height:auto;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+    background: #2B2B2B;
+   /* margin-left: 18%;*/
+}
+.image-slider-wrapper{
+	overflow: hidden;
+}
+#image_slider{
+	position: relative;
+	overflow: hidden;
+	height: 200px;
+	padding:0;
+	left:0;
+}
+#image_slider li{
+	position:relative;
+	max-width: 100%;
+	float:left;
+	list-style: none;
+	left: 0;
+}
+
+/*====================================*/
+/*          SIDEBAR                   */
+/*====================================*/
+
+#sidebar {
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    top:0;
+    width: 250px;
+    bottom: 0px;
+    background:#2B2B2B;
+    padding: 0em 0em 0em 0em;
+}
+
+#contacto-sidebar{
+    color: white;
+    text-align: center;
+}
+
+#contacto-sidebar h2{
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+/*====================================*/
+/*          VISTA INDIVIDUAL          */
+/*====================================*/
+.no-visited{
+    text-decoration: none;
+    color: #2b2b2b;
+}
+#individual{
+    width: calc(100% - 250px);
+    text-align: center;
+}
+#individual h4{
+    font-size: 26px;
+}
+#individual p{
+    margin: 10px 35%;
+    text-align: justify;
+}
+
+
+#individual button{
+    
+  border: 0 none;
+  border-radius: 24px;
+  padding: 12px 18px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 160px;
+      -ms-flex: 0 0 160px;
+          flex: 0 0 160px;
+  text-align: center;
+  line-height: 1.3;
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 500;
+  -webkit-transition: all 60ms ease-in-out;
+  transition: all 60ms ease-in-out;
+  background-color: #2B2B2B;
+  margin: 30px auto;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#individual button:hover {
+  opacity: .95;
+  -webkit-transition: all 60ms ease;
+  transition: all 60ms ease;
+}
+
+#individual button:active {
+  opacity: .75;
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+  -webkit-transition: all 60ms ease;
+  transition: all 60ms ease;
+}
+
+
+#individual img{
+    display: block;
+    width: auto;
+    margin: 20px auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#individual iframe{
+    display: block;
+    width: auto;
+    margin: 20px auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.indi-hab p{
+    margin: 10px 0 !important;
+}
+
+/*====================================*/
+/*          SIDEBAR - MENU            */
+/*====================================*/
+
+.desactivar{
+    display: none !important;
+}
+
+.navigation {
+  width: 0;
+}
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+  display: block;
+  background-color: #2B2B2B;
+  text-decoration: none;
+  padding: 10px;
+  color: #FFF;
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+    background-color: #4d4d4d;
+}
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 300px;
+}
+
+.mainmenu li .lista-desplegada{
+    max-height: 300px;
+    display: block;
+}
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a,
+.lista-desplegada a{
+  background-color: #4d4d4d;
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover,
+.lista-desplegada a:hover{
+  background-color: #808080;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu,
+.lista-desplegada{
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+.navigation nav ul li{
+    text-align: left;
+    display: block;
+}
+
+.altura-contacto{
+    /*height: 2000px;*/
+}
